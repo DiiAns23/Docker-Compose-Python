@@ -1,0 +1,10 @@
+version: '20.10.12'
+
+services:
+  product-service:
+    build: ./producto
+    volumes:
+      - ./producto:/usr/src/app
+    ports:
+      - 5001:80
+
